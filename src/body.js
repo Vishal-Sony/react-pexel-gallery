@@ -9,7 +9,7 @@ const Body = ({ query }) => {
   return (
     <body>
       <Router>
-        <Route path="/:imgId" component={() => <Img query={query} />} />
+        <Route path="/react-pexel-gallery/:imgId" component={() => <Img query={query} />} />
         {/* <ImageList rowHeight={300} cols={3}>
           {query.map((query) => (
             <ImageListItem>
@@ -27,7 +27,7 @@ const Body = ({ query }) => {
             </Link>
           ))}
         </div> */}
-        <Route path="/" exact component={() => <Allimg query={query} />} />
+        <Route path="/react-pexel-gallery/" exact component={() => <Allimg query={query} />} />
         {/* <div
           style={{
             display: "flex",
